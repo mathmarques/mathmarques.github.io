@@ -70,9 +70,12 @@
     </div>
     <footer class="mt-8 text-center">
         <p class="text-[11px] font-medium uppercase tracking-[0.2em] text-slate-600">
-            © 2025 Matheus Marques
+            © <span id="y">1991</span> Matheus Marques
         </p>
     </footer>
 </main>
+<script>
+((e,y=1991,t=new Date().getFullYear())=>{let i=setInterval(()=>y<t?e.textContent=++y:clearInterval(i),30)})(document.getElementById('y'))
+</script>
 </body>
 </html>
