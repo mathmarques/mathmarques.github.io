@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #135bec;
+  --color-background-dark: #0a0f1a;
+  --color-card-dark: #161d2b;
+  --font-family-sans: "Inter", sans-serif;
+}
+
+.mesh-gradient {
+    background-color: #0a0f1a;
+    background-image:
+        radial-gradient(at 0% 0%, rgba(19, 91, 236, 0.12) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(19, 91, 236, 0.08) 0px, transparent 50%);
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Social links */
+.social-link {
+    @apply flex flex-col items-center gap-2;
+}
+
+.social-link .social-icon-box {
+    @apply size-12 flex items-center justify-center rounded-2xl bg-slate-800/50 border border-slate-700/50 transition-colors;
+}
+
+.social-link:hover .social-icon-box {
+    @apply border-primary bg-primary/10;
+}
+
+.social-link .social-icon {
+    @apply text-slate-400 transition-colors;
+}
+
+.social-link:hover .social-icon {
+    @apply text-primary;
+}
+
+.social-link .social-label {
+    @apply text-[10px] font-bold uppercase tracking-widest text-slate-500 transition-colors;
+}
+
+.social-link:hover .social-label {
+    @apply text-slate-300;
+}
+
+/* Card */
+.card {
+    @apply bg-card-dark border border-slate-800 rounded-3xl shadow-2xl overflow-hidden;
+}
+
+/* Button */
+.btn-primary {
+    @apply w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 px-6 rounded-2xl transition-colors shadow-lg shadow-primary/20 flex items-center justify-center gap-2;
+}
