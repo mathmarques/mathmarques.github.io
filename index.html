@@ -26,7 +26,7 @@
             </div>
             <div class="space-y-2">
                 <h1 class="text-3xl font-bold tracking-tight text-white">Matheus Marques</h1>
-                <p class="text-lg font-medium text-primary">Software Engineer</p>
+                <p class="text-lg font-medium text-primary"><span id="t"></span><span class="cursor">|</span></p>
                 <div class="flex items-center justify-center gap-1.5 text-slate-400">
                     <span class="material-symbols-outlined text-[18px]">location_on</span>
                     <span class="text-sm font-light">Juiz de Fora / MG - Brazil</span>
@@ -75,7 +75,8 @@
     </footer>
 </main>
 <script>
-((e,y=1991,t=new Date().getFullYear())=>{let i=setInterval(()=>y<t?e.textContent=++y:clearInterval(i),30)})(document.getElementById('y'))
+((e,y=1991,t=new Date().getFullYear())=>{let i=setInterval(()=>y<t?e.textContent=++y:clearInterval(i),30)})(document.getElementById('y'));
+((e,s='Software Engineer',i=0)=>{setTimeout(()=>{let t=setInterval(()=>i<s.length?e.textContent+=s[i++]:clearInterval(t),80)},600)})(document.getElementById('t'))
 </script>
 </body>
 </html>
